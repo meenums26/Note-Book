@@ -4,7 +4,6 @@ const CreateNote = ({ createNote }) => {
     const [note, setNote] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert('Note added successfully!');
         const data = {
             note,
             id:Math.floor(Math.random()*1000),

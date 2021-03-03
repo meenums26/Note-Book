@@ -4,7 +4,7 @@ const ImportantNote = ({notes,toggleNote}) => {
     return (
         <div className="importantNotes">
             <h5><b>My Favourites</b></h5>
-            <div>
+            <div className="container">
                 {notes.filter(note=>note.isImportant === true).map(note=><Note note={note} toggleNote={toggleNote} key={note.id}/>)}
             </div>
             
